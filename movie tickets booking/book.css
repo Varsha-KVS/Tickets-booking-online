@@ -1,0 +1,61 @@
+body {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+select {
+  padding: 8px;
+  margin: 10px;
+}
+
+.screen {
+  width: 70%;
+  height: 100px;
+  margin: 30px auto;
+
+  background: linear-gradient(to bottom, #ffffff, #d1d5db);
+
+  border-radius: 50% / 20%;  
+
+  transform: perspective(400px) rotateX(-25deg); 
+
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.3);
+}
+
+.theater {
+  display: grid;
+  grid-template-columns: repeat(23, 40px); 
+  gap: 8px;
+  justify-content: center;
+}
+.gap {
+  border-left: 2px dashed #555;
+}
+.seat {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.available { background: #22c55e; }
+.selected { background: #44b3ef; }
+.booked { background: gray; cursor: not-allowed; }
+
+button {
+  padding: 10px;
+  margin-top: 15px;
+  background: orange;
+  border: none;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}

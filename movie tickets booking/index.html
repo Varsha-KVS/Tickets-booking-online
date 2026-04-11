@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BookMyShow Clone</title>
+  <link rel="stylesheet" href="book.css">
+</head>
+
+<body>
+
+<h1>🎬 Book Your Movie</h1>
+
+<select id="movie">
+  <option value="150">Dhurandhar 2 - ₹250</option>
+  <option value="200">Youth - ₹200</option>
+  <option value="180">Biker - ₹170</option>
+  <option value="180">kanchana re-release - ₹150</option>
+  <option value="180">Raakasaa - ₹240</option>
+</select>
+
+
+<select id="timing">
+  <option>10:00 AM</option>
+  <option>2:00 PM</option>
+  <option>6:00 PM</option>
+  <option>9:00 PM</option>
+</select>
+
+<br>
+</br>
+
+<div class="theater" id="theater"></div>
+<div class="screen"></div>
+
+<h2>Total: ₹<span id="price">0</span></h2>
+
+<button id="payBtn">Proceed to Payment</button>
+
+
+<div id="payment" class="hidden">
+  <h2>💳 Payment</h2>
+  <p>Amount: ₹<span id="final"></span></p>
+  <button onclick="confirmBooking()">Confirm</button>
+</div>
+
+<script src="movie.js"></script>
+
+</body>
+</html>
